@@ -1,0 +1,27 @@
+{
+  "minMuleVersion": "4.1.0",
+  "requiredProduct": "MULE",
+  "extensionModelLoaderDescriptor": {
+    "id": "crafted",
+    "attributes": {
+      "type": "com.rwc.mule4.conf.AwsS3ConfPropertiesLoadingDelegate"
+    }
+  },
+  "name": "s3-configuration-properties",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [
+       "com.rwc.mule4.conf",
+       "org.yaml.snakeyaml"
+       ],
+      "exportedResources": [
+        "META-INF/services/org.mule.runtime.config.api.dsl.model.properties.ConfigurationPropertiesProviderFactory"
+       ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}

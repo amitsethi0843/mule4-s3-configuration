@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.rwc.mule4</groupId>
+    <artifactId>awss3-conf</artifactId>
+    <version>1.0.11-snapshot</version>
+    <packaging>mule-extension</packaging>
+    <name>Basic Extension</name>
+
+    <parent>
+        <groupId>org.mule.extensions</groupId>
+        <artifactId>mule-modules-parent</artifactId>
+        <version>1.1.3</version>
+    </parent>
+	 <dependencies>
+        <dependency>
+            <groupId>org.mule.runtime</groupId>
+            <artifactId>mule-module-spring-config</artifactId>
+            <version>${mule.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+		    <groupId>org.yaml</groupId>
+		    <artifactId>snakeyaml</artifactId>
+		    <version>1.18</version>            
+		</dependency>
+		<dependency>
+		    <groupId>com.amazonaws</groupId>
+		    <artifactId>aws-java-sdk</artifactId>
+		    <version>1.11.163</version>
+		</dependency>
+    </dependencies>
+
+ <repositories>
+        <repository>
+            <id>MuleSoft repository</id>
+            <name>MuleSoft repository</name>
+            <url>https://repository-master.mulesoft.org/nexus/content/repositories/releases/</url>
+        </repository>
+    </repositories>
+
+</project>
