@@ -33,13 +33,13 @@ public class AwsS3ConfPropertiesLoadingDelegate implements ExtensionLoadingDeleg
 			        .fromVendor("RWC")
 			        // This defines a global element in the extension with name config
 			        .withConfig(CONFIG_ELEMENT);
-		  ParameterGroupDeclarer defaultParameterGroup = configurationDeclarer.onDefaultParameterGroup();
-//		    // TODO you can add/remove configuration parameter using the code below.
-		    defaultParameterGroup
-		        .withRequiredParameter("path").ofType(BaseTypeBuilder.create(JAVA).stringType().build())
-//		        .withDisplayModel(DisplayModel.builder().displayName("path").build())
-		        .withExpressionSupport(NOT_SUPPORTED)
-		        .describedAs("for loading properties from s3");
+//		  ParameterGroupDeclarer defaultParameterGroup = configurationDeclarer.onDefaultParameterGroup();
+////		    // TODO you can add/remove configuration parameter using the code below.
+//		    defaultParameterGroup
+//		        .withRequiredParameter("path").ofType(BaseTypeBuilder.create(JAVA).stringType().build())
+////		        .withDisplayModel(DisplayModel.builder().displayName("path").build())
+//		        .withExpressionSupport(NOT_SUPPORTED)
+//		        .describedAs("for loading properties from s3");
 		    ParameterGroupDeclarer parameterGroupDeclarer = configurationDeclarer.onParameterGroup("s3conf").withDslInlineRepresentation(true);
 		    parameterGroupDeclarer.withRequiredParameter(ACCESS_KEY).ofType(BaseTypeBuilder.create(JAVA).stringType().build());
 		    parameterGroupDeclarer.withRequiredParameter(ACCESS_SECRET).ofType(BaseTypeBuilder.create(JAVA).stringType().build());
