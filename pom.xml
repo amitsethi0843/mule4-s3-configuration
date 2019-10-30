@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.rwc.mule4</groupId>
     <artifactId>awss3-conf</artifactId>
-    <version>1.0.11-snapshot</version>
+    <version>1.0.12-snapshot</version>
     <packaging>mule-extension</packaging>
     <name>Basic Extension</name>
 

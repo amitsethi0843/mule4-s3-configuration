@@ -34,7 +34,7 @@ public class AwsS3ConfPropertiesProviderFactory implements ConfigurationProperti
 			ResourceProvider externalResourceProvider) {
 
 		ComponentIdentifier s3ConfComponentIdentifier =
-				   ComponentIdentifier.builder().namespace("EXTENSION_NAME").name("s3conf").build();
+				   ComponentIdentifier.builder().namespace(EXTENSION_NAME).name("s3conf").build();
 
 		String filePath = parameters.getComplexConfigurationParameter(s3ConfComponentIdentifier).get(0).getStringParameter(FILE_PATH);
 		String accessKey=parameters.getComplexConfigurationParameter(s3ConfComponentIdentifier).get(0).getStringParameter(ACCESS_KEY);
